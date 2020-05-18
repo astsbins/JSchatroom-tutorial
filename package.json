@@ -10,9 +10,11 @@
   "author": "Jack",
   "license": "MIT",
   "dependencies": {
+    "bufferutil": "^4.0.1",
     "express": "^4.17.1",
     "moment": "^2.25.3",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.3.0",
+    "utf-8-validate": "^5.0.2"
   },
   "devDependencies": {
     "nodemod": "^2.6.1",

@@ -18,7 +18,7 @@ chatForm.addEventListener('submit', (e) => {
     //scroll down then clear input
     chatMessages.scrollTop = chatMessages.scrollHeight;
     e.target.elements.msg.value = '';
-    e.target.elements.msg.forEach();
+    e.target.elements.msg.focus();
 })
 
 // Output message to DOM
@@ -26,9 +26,9 @@ function outputMessage(message) {
     const div = document.createElement('div');
     div.classList.add('message');
     div.innerHTML = `
-    <p class="meta">Mary <span>9:15pm</span></p>
+    <p class="meta">Mary <span>${message.time}</span></p>
     <p class="text">
-        ${message}
+        ${message.text}
     </p>
     `
     document.querySelector('.chat-messages').appendChild(div);
