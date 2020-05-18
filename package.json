@@ -1,0 +1,21 @@
+{
+  "name": "jschatroom-tutorial",
+  "version": "1.0.0",
+  "description": "Realtime Chat App with rooms makde following a tutorial",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "Jack",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.25.3",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemod": "^2.6.1",
+    "nodemon": "^2.0.4"
+  }
+}
